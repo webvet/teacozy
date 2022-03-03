@@ -4,6 +4,7 @@ body {
     font-size: 22px;
     color: seashell;
     margin-top: 0px;
+    opacity: 0.9;
 }
 
 header {
@@ -11,21 +12,22 @@ header {
     height: 69px;
     width: 100%;
     border-bottom: 1px solid seashell;
-    display: flex;
-    justify-content: space-between;
+    
     position: fixed;
 }
 
 header .logo {
     margin-left: 10px;
     margin-top: 9px;
+    height: 50px;
+    float: left;
 }
 
 header li {
     display: inline-block;
+    float: right;
     text-decoration: underline;
-    padding-right: 20px;
-    padding-top: 20px;
+    margin-right: 30px;
 }
 
 main {
@@ -46,8 +48,7 @@ main {
 }
 
 main img {
-    
-    margin-top: 70px;
+    opacity: 0.8;
 }
 
 section {
@@ -58,16 +59,28 @@ section {
     text-align: center;
 }
 
-#cards {
+.cards {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-#cards .img img {
-    height: 200px;
+.cards img {
     width: 300px;
-    padding: 10px;
+    height: 200px;
+}
+
+.cards .second-row-left {
+    margin-left: 130px;
+}
+
+.cards .second-row-right {
+    margin-right: 130px;
+}
+
+.caption {
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 #locations {
@@ -87,13 +100,12 @@ section {
     width: 1200px;
     text-align: center;
     color: seashell;
-    margin-bottom: 15px;
+    margin-bottom: -125px;
 }
 
 
 #locations .address {
     width: 300px;
-    margin-top: 15px;
     text-align: center;
     background-color: black;
 }
